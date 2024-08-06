@@ -71,3 +71,11 @@ footer {
 .project p {
     margin: 0.5em 0;
 }
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 1em 0;
+}
