@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Blog"
+title: ""
 ---
 
 I am an [MIT](https://www.mit.edu/) AI research engineer where I study generative modeling, representation learning, and knowledge distillation / compression.
