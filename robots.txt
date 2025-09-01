@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://aleccarruthers.github.io/sitemap.xml
+Sitemap: https://aleccarruthers.github.io/about//sitemap.xml
