@@ -3,9 +3,9 @@
     "name": "Alec Carruthers",
     "label": "AI Scientist and Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "I am AI researcher studying the development of open-ended / robust AI methods that excel when out-of-distribution",
+    "email": "alecc@mit.edu",
+    "url": "https://aleccarruthers.github.io/",
+    "summary": "I am an AI researcher interested in open-endedness, reinforcement learning, computer vision, generative modeling, physics, and out-of-distribution generalization.",
     "location": {
       "city": "Boston",
       "countryCode": "US",
@@ -28,18 +28,6 @@
       "highlights": ["Medical Foundation Models", "Diffusion Modeling", "Vision Language Models (VLMs)"]
     }
   ],
-  /*"volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],*/
   "education": [
     {
       "institution": "Georgia Institute of Technology",
@@ -50,7 +38,7 @@
       "startDate": "2021-01-01",
       "endDate": "2022-12-15",
       "gpa": "4.0",
-      "courses": [ "Computer Vision", "Artificial Intelligence", "Reinforcement Learning", "AI and Robotics", "Graph Neural Networks", "Human Computer Interaction AI", "Deep Learning" ]
+      "courses": ["Computer Vision", "Artificial Intelligence", "Reinforcement Learning", "AI and Robotics", "Graph Neural Networks", "Human Computer Interaction AI", "Deep Learning"]
     },
     {
       "institution": "University of Texas at Austin",
@@ -61,7 +49,7 @@
       "startDate": "2019-01-01",
       "endDate": "2020-12-01",
       "gpa": "3.96",
-      "courses": [ "High Performance Computer", "Scientific Computing", "Image Processing", "Remote Sensing", "Optimal Control Theory", "Linear Algebra & Differential Equations"]
+      "courses": ["High Performance Computer", "Scientific Computing", "Image Processing", "Remote Sensing", "Optimal Control Theory", "Linear Algebra & Differential Equations"]
     },
     {
       "institution": "University of California, Irvine",
@@ -73,14 +61,13 @@
       "endDate": "2018-06-15",
       "gpa": "3.80",
       "awards": "Magna Cum Laude",
-      "courses": [ "Propulsion", "Aircraft Performance and Optimization", "Fluid Mechanics", "Thermodynamics", "Optimal Control", "Aerodynamics" ]
+      "courses": ["Propulsion", "Aircraft Performance and Optimization", "Fluid Mechanics", "Thermodynamics", "Optimal Control", "Aerodynamics"]
     }
   ],
   "awards": [
     {
       "title": "Texas Venture Labs Champion",
       "awarder": "University of Texas at Austin",
-      //"url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
       "summary": "As part of a four person team, we developed an idea for a startup company that would sell authentic Indian sari's to bridesmaids in the US and won a competition when pitching this idea to a panel of investors, resulting in a $10,000 prize."
     }
   ],
@@ -190,7 +177,7 @@
         "Optimal Transport"
       ]
     }
-  ],
+  ]
   //"references": [
   //  {
   //    "name": "Professor John Doe",
