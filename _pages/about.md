@@ -27,13 +27,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! My name is Alec and I perform Artificial Intelligence (AI) research for a living. 
+Hello! My name is Alec and I perform Artificial Intelligence (AI) research for a living.
 
 One of the main goals I have for this site is to highlight what I see as open problems and the limitations of current approaches.
-This could take the form of outlining the approach of a new paper, describing my thoughts about current approaches, sharing preliminary research, and or 
+This could take the form of outlining the approach of a new paper, describing my thoughts about current approaches, sharing preliminary research, and or
 performing small scale experiments to demonstrate weakness of current models.
 
 I will focus primarily on my interest areas, which are quite broad, but also hope to expand to other areas:
+
 - Generative Modeling: autoregression, diffusion, normalizing flows, GANs
 - Generalization and Open-Endedness
 - Reinforcement Learning

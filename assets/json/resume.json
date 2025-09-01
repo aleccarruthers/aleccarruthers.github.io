@@ -38,7 +38,15 @@
       "startDate": "2021-01-01",
       "endDate": "2022-12-15",
       "gpa": "4.0",
-      "courses": ["Computer Vision", "Artificial Intelligence", "Reinforcement Learning", "AI and Robotics", "Graph Neural Networks", "Human Computer Interaction AI", "Deep Learning"]
+      "courses": [
+        "Computer Vision",
+        "Artificial Intelligence",
+        "Reinforcement Learning",
+        "AI and Robotics",
+        "Graph Neural Networks",
+        "Human Computer Interaction AI",
+        "Deep Learning"
+      ]
     },
     {
       "institution": "University of Texas at Austin",
@@ -49,7 +57,14 @@
       "startDate": "2019-01-01",
       "endDate": "2020-12-01",
       "gpa": "3.96",
-      "courses": ["High Performance Computer", "Scientific Computing", "Image Processing", "Remote Sensing", "Optimal Control Theory", "Linear Algebra & Differential Equations"]
+      "courses": [
+        "High Performance Computer",
+        "Scientific Computing",
+        "Image Processing",
+        "Remote Sensing",
+        "Optimal Control Theory",
+        "Linear Algebra & Differential Equations"
+      ]
     },
     {
       "institution": "University of California, Irvine",
@@ -142,11 +157,11 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker",
+      "fluency": "Native speaker"
     },
     {
       "language": "Spanish",
-      "fluency": "Intermediate",
+      "fluency": "Intermediate"
     }
   ],
   "interests": [
@@ -168,14 +183,7 @@
     {
       "name": "Physics",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Statistical Mechanics",
-        "Thermodynamics",
-        "Fluid Mechanics",
-        "General Relativity",
-        "Quantum Mechanics",
-        "Optimal Transport"
-      ]
+      "keywords": ["Statistical Mechanics", "Thermodynamics", "Fluid Mechanics", "General Relativity", "Quantum Mechanics", "Optimal Transport"]
     }
   ]
   //"references": [
