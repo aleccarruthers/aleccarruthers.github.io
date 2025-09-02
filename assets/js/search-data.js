@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/about/blog/";
               },
-            },{id: "post-a-post-with-plotly-js",
+            },{id: "post-a-distill-style-blog-post",
+        
+          title: "a distill-style blog post",
+        
+        description: "an example of a distill-style blog post and main elements",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/about/blog/2025/generative-ai/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
