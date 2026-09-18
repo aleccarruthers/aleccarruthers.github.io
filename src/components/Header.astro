@@ -1,5 +1,6 @@
 ---
 import profile from '../content/profile.json';
+import ThemeToggle from './ThemeToggle.astro';
 const path = Astro.url.pathname;
 const links = [
   { href: '/', label: 'About' },
@@ -12,4 +13,5 @@ const links = [
   <nav aria-label="Main navigation">
     {links.map(({ href, label }) => <a href={href} aria-current={(href === '/' ? path === href : path.startsWith(href)) ? 'page' : undefined}>{label}</a>)}
   </nav>
+  <ThemeToggle />
 </header>
