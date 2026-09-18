@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { visiblePosts, postUrl, formatDate } from '../../lib/posts';
+const posts = await visiblePosts();
+---
+<BaseLayout title="Blog" description="Writing by Alec Carruthers.">
+  <div class="intro">
+    <p class="eyebrow">Writing</p>
+    <h1>Blog</h1>
+    <p><a href="/rss.xml">Subscribe via RSS <span aria-hidden="true">↗</span></a></p>
+  </div>
+  {posts.length ? <ol class="entry-list posts">
+    {posts.map(post => <li class="entry post-entry">
+      <div class="meta">{post.data.draft ? <span>Draft · local preview</span> : <time datetime={post.data.publishedAt!.toISOString()}>{formatDate(post.data.publishedAt!)}</time>}</div>
+      <div><h2><a class="entry-title" href={postUrl(post)}>{post.data.title}</a></h2><p>{post.data.description}</p></div>
+    </li>)}
+  </ol> : <div class="empty-state"><p class="prose">No published posts yet.</p><p class="meta">New posts will appear here and in the RSS feed.</p></div>}
+</BaseLayout>

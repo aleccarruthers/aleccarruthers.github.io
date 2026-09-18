@@ -17,4 +17,16 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { projects };
+const blog = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    draft: z.boolean().default(true),
+    publishedAt: z.coerce.date().optional(),
+  }).refine(post => post.draft || !!post.publishedAt, {
+    message: 'Published posts require a publishedAt date.',
+  }),
+});
+
+export const collections = { projects, blog };

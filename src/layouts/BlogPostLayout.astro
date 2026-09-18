@@ -1,0 +1,18 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { formatDate } from '../lib/posts';
+interface Props { title: string; description: string; draft: boolean; publishedAt?: Date; }
+const { title, description, draft, publishedAt } = Astro.props;
+---
+<BaseLayout title={title} description={description} noindex={draft} article>
+  <article>
+    <header class="intro">
+      <p class="eyebrow"><a href="/blog/">← All posts</a></p>
+      <h1>{title}</h1>
+      {!draft && publishedAt && <p class="meta"><time datetime={publishedAt.toISOString()}>{formatDate(publishedAt)}</time></p>}
+      <p class="prose">{description}</p>
+    </header>
+    {draft && <aside class="notice"><strong>Draft — local preview only.</strong> This post is excluded from the production site, RSS feed, and sitemap.</aside>}
+    <div class="prose"><slot /></div>
+  </article>
+</BaseLayout>
