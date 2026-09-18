@@ -1,0 +1,15 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectEntry from '../components/ProjectEntry.astro';
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const entries = await Promise.all(projects.map(async project => ({ project, ...await render(project) })));
+---
+<BaseLayout title="Projects" description="Research and industry work by Alec Carruthers in biomedical foundation models, ultrasound, wearable sensing, and imaging.">
+  <div class="intro">
+    <p class="eyebrow">Research & industry</p>
+    <h1>Projects</h1>
+    <p class="prose">Work on biomedical data, representation learning, and scientific applications of machine learning.</p>
+  </div>
+  <ul class="entry-list">{entries.map(({ project, Content }) => <ProjectEntry project={project}><Content /></ProjectEntry>)}</ul>
+</BaseLayout>

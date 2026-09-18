@@ -1,0 +1,12 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props { project: CollectionEntry<'projects'>; compact?: boolean; }
+const { project, compact = false } = Astro.props;
+const { title, organization, period, summary, links } = project.data;
+---
+<li class="entry" id={compact ? undefined : project.id}>
+  <p class="meta">{organization} <span aria-hidden="true">/</span> {period}</p>
+  <h3>{compact ? <a class="entry-title" href={`/projects/#${project.id}`}>{title}</a> : title}</h3>
+  {compact ? <p>{summary}</p> : <div class="project-body"><slot /></div>}
+  {links.length > 0 && <div class="entry-links">{links.map(link => <a href={link.url}>{link.label}<span aria-hidden="true"> ↗</span></a>)}</div>}
+</li>

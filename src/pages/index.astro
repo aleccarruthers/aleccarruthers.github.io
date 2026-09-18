@@ -3,6 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PublicationEntry from '../components/PublicationEntry.astro';
 import profile from '../content/profile.json';
 import publications from '../content/publications.json';
+import { getCollection } from 'astro:content';
+import ProjectEntry from '../components/ProjectEntry.astro';
+const projects = (await getCollection('projects', ({ data }) => data.featured)).sort((a, b) => a.data.order - b.data.order);
 ---
 <BaseLayout title={profile.name}>
   <div class="profile-heading">
@@ -21,10 +24,15 @@ import publications from '../content/publications.json';
     <div><dt>Focus</dt><dd>{profile.focus}</dd></div>
   </dl>
   <nav class="section-nav" aria-label="On this page">
+    <a href="#research">Research</a>
     <a href="#publications">Publications</a>
     <a href="#background">Background</a>
     <a href="#tools">Tools & methods</a>
   </nav>
+  <section class="section" id="research" aria-labelledby="research-title">
+    <div class="section-heading"><h2 id="research-title">Selected research</h2><a href="/projects/">All projects <span aria-hidden="true">→</span></a></div>
+    <ul class="entry-list">{projects.map(project => <ProjectEntry project={project} compact />)}</ul>
+  </section>
   <section class="section" id="publications" aria-labelledby="publications-title">
     <div class="section-heading"><h2 id="publications-title">Publications</h2></div>
     <ul class="entry-list">{publications.items.map(publication => <PublicationEntry publication={publication} />)}</ul>
