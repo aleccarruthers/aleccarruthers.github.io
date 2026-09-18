@@ -1,0 +1,40 @@
+{
+  "name": "Alec Carruthers",
+  "description": "Alec Carruthers is an MIT EECS PhD student studying data-efficient learning and foundation models for biological science.",
+  "role": "PhD student · MIT EECS",
+  "focus": "Data-efficient learning · AI for science",
+  "photoAlt": "Alec Carruthers seated outdoors beneath trees",
+  "bio": [
+    "I’m a first-year PhD student in Electrical Engineering and Computer Science at MIT. I’m interested in how data shapes what models learn: how dataset curation affects generalization, how to learn efficiently from limited data, and how to keep learning as data changes.",
+    "Previously, I was an AI Research Engineer at MIT Lincoln Laboratory, working on biomedical foundation models, multimodal learning, and ultrasound diffusion models. Before that, I worked on hyperspectral imaging and self-supervised learning at Apeel Sciences.",
+    "My research interests also include diffusion and flow models for molecular design and discovery, and foundation models for biological science."
+  ],
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/aleccarruthers" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/alec-carruthers" }
+  ],
+  "experience": [
+    { "role": "AI Research Engineer", "organization": "MIT Lincoln Laboratory", "dates": "2023–2026" },
+    { "role": "Data Scientist", "organization": "Apeel Sciences", "dates": "2021–2022" }
+  ],
+  "education": [
+    { "degree": "PhD, Electrical Engineering and Computer Science", "school": "Massachusetts Institute of Technology", "date": "2026–", "note": "Started September 2026" },
+    { "degree": "MS, Computer Science", "school": "Georgia Institute of Technology", "date": "2022", "note": "Computer vision" },
+    { "degree": "MS, Environmental Engineering", "school": "University of Texas at Austin", "date": "2020", "note": "Thesis on the GeoFlood flood-inundation mapping framework" },
+    { "degree": "BS, Aerospace Engineering", "school": "University of California, Irvine", "date": "2018", "note": "Magna cum laude" }
+  ],
+  "teaching": "At UT Austin, I was a teaching assistant for Linear Algebra and Differential Equations from June 2019 to December 2020.",
+  "award": "Best Paper Award, Young Researcher · IEEE Engineering in Medicine and Biology Society · Announced August 2026",
+  "skills": [
+    { "category": "Languages", "items": ["Python", "C++", "CUDA", "Java", "MATLAB", "Bash"] },
+    { "category": "Machine learning", "items": ["PyTorch", "Transformers", "Hugging Face", "FSDP", "DDP", "DeepSpeed", "Diffusers", "TensorRT"] },
+    { "category": "Methods", "items": ["Self-supervised learning", "Representation learning", "Diffusion models", "Meta-learning", "Multimodal learning", "Active learning", "LLMs / VLMs"] },
+    { "category": "Systems", "items": ["Slurm", "Git", "DVC", "AWS", "Google Cloud"] }
+  ],
+  "source": "content/resume.pdf; GitHub remote; owner-approved links and award date in conversation",
+  "todos": [
+    "TODO: Confirm a public location if a location field is wanted; education locations are not used as residence.",
+    "TODO: Supply Scholar or X URLs if these links are wanted; omitted until supplied.",
+    "TODO: Confirm patent application/grant status and a public identifier before adding the patent entry."
+  ]
+}
