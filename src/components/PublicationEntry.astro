@@ -1,0 +1,14 @@
+---
+interface Props {
+  publication: { title: string; authors: string; venue: string | null; date: string; url: string | null };
+}
+const { publication: paper } = Astro.props;
+const authorParts = paper.authors.split('Carruthers A');
+---
+<li class="entry publication">
+  <p class="meta">{paper.date}</p>
+  <h3>{paper.title}</h3>
+  <p class="meta">{authorParts[0]}<strong>Carruthers A</strong>{authorParts[1]}</p>
+  {paper.venue && <p class="meta"><em>{paper.venue}</em></p>}
+  {paper.url && <div class="entry-links"><a href={paper.url}>Paper</a></div>}
+</li>
