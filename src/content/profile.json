@@ -11,6 +11,7 @@
     "I aspire to have my work make tangible impact and some of the application areas I find most beneficial for society include: generative modeling for molecular design (proteins, enzymes, small molecules, etc.), multimodal continual learning across healthcare data for an individual to inform decision making, and accurately representing the impacts of a pertubation on a cell (in silico --> computationally)"
   ],
   "links": [
+    { "label": "Scholar", "url": "https://scholar.google.com/citations?user=gNhR0hgAAAAJ&hl=en&oi=ao" },
     { "label": "GitHub", "url": "https://github.com/aleccarruthers" },
     { "label": "LinkedIn", "url": "https://www.linkedin.com/in/alec-carruthers" }
   ],
@@ -35,7 +36,7 @@
   "source": "content/resume.pdf; GitHub remote; owner-approved links and award date in conversation",
   "todos": [
     "TODO: Confirm a public location if a location field is wanted; education locations are not used as residence.",
-    "TODO: Supply Scholar or X URLs if these links are wanted; omitted until supplied.",
+    "TODO: Supply an X URL if this link is wanted; omitted until supplied.",
     "TODO: Confirm patent application/grant status and a public identifier before adding the patent entry."
   ]
 }

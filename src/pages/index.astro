@@ -6,6 +6,7 @@ import publications from '../content/publications.json';
 import { getCollection } from 'astro:content';
 import ProjectEntry from '../components/ProjectEntry.astro';
 const projects = (await getCollection('projects', ({ data }) => data.featured)).sort((a, b) => a.data.order - b.data.order);
+const scholar = profile.links.find(link => link.label === 'Scholar');
 ---
 <BaseLayout title={profile.name}>
   <div class="profile-heading">
@@ -34,7 +35,10 @@ const projects = (await getCollection('projects', ({ data }) => data.featured)).
     <ul class="entry-list">{projects.map(project => <ProjectEntry project={project} compact />)}</ul>
   </section>
   <section class="section" id="publications" aria-labelledby="publications-title">
-    <div class="section-heading"><h2 id="publications-title">Publications</h2></div>
+    <div class="section-heading">
+      <h2 id="publications-title">Publications</h2>
+      {scholar && <a href={scholar.url}>Google Scholar <span aria-hidden="true">↗</span></a>}
+    </div>
     <ul class="entry-list">{publications.items.map(publication => <PublicationEntry publication={publication} />)}</ul>
     <p class="award meta">{profile.award}</p>
   </section>
