@@ -22,11 +22,24 @@ npm run preview
 
 Astro 7 runs preview in the background. To stop it, use `npx astro preview stop`.
 
+Dev and preview servers are tracked separately for each project directory. Run these commands from this repository root (the npm scripts use the installed Astro version):
+
+```sh
+npm run dev -- status
+npm run preview -- status
+npm run dev -- stop
+npm run preview -- stop
+```
+
+A preview server serves the last `dist/` build; it does not update as you edit source files. Use the URL printed by `npm run dev` for live editing. If a stop command cannot find a server, check that it targets the correct project directory and server type. Servers started with `--ignore-lock` are not tracked and must be stopped in their original terminal.
+
+To refresh publications, compare the profile and each paper's detail page with `src/content/publications.json`, update the complete author list, date (preserving the source's precision), venue, and paper URL, then update `updatedAt`. Keep the entries newest first and build before publishing. The rendering component keeps the same formatting and highlights Alec Carruthers in either full-name or abbreviated citations.
+
 ## Content
 
 - `content/`: private, read-only local resume and original photo. Ignored by Git and never copied into the build. Keep your own backup; a fresh clone will not contain these originals.
 - `src/content/profile.json`: bio, education, work, skills, approved profile links, and unresolved TODOs.
-- `src/content/publications.json`: resume-sourced citations and their unresolved metadata.
+- `src/content/publications.json`: a reviewed snapshot of the owner's Google Scholar entries, including full authors, publication dates, venues, and source links. `updatedAt` records the last review date.
 - `src/content/projects/*.md`: project descriptions; frontmatter controls order, featured status, and links.
 - `src/content/blog/*.md`: Markdown posts.
 - `public/images/profile.jpg`: approved portrait derivative, cropped and resized to 480 × 480 with metadata removed. The resume PDF is not published.
@@ -73,9 +86,9 @@ No Lighthouse score is claimed; these are local build and browser checks. The Gi
 
 ## Open content TODOs
 
-- Optional public location, Scholar, and X links; omitted until supplied.
+- Optional public location and X link; omitted until supplied. Scholar is linked in the profile, publications section, and site footer.
 - Patent status and public identifier; patent entry omitted until confirmed.
-- Paper URLs for all three publications, author-asterisk meaning on the first, and venue/status of the catheterization paper.
+- Keep the publication snapshot current when Scholar entries change; the site does not automatically fetch Scholar.
 - Public project/code links and approved images where available; AI-GUIDE already has its supplied project link.
 - GeoFlood thesis URL and further technical details.
 - Replace the placeholder draft and supply a publication date before publishing.

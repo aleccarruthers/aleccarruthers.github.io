@@ -1,32 +1,46 @@
 {
-  "source": "content/resume.pdf; owner confirmed award announcement in August 2026",
+  "source": "Owner-supplied Google Scholar profile and its publication detail pages: https://scholar.google.com/citations?user=gNhR0hgAAAAJ&hl=en&oi=ao",
+  "updatedAt": "2026-10-08",
   "items": [
     {
-      "title": "Semi-Automated, AI-Enabled Ultrasound Workflow for Central Vascular Access in Humans",
-      "authors": "Gjesteby L, Carruthers A, DeLosa N, et al.",
-      "venue": "IEEE Engineering in Medicine and Biology Society",
-      "date": "February 2026",
+      "title": "User validation of an AI-assisted ultrasound guidance system for rapid vascular access",
+      "authors": "Samay Prakash, Theodore T Pierce, Mary Waugh, Lars A Gjesteby, Nancy D DeLosa, Alec Carruthers, Joshua S Werblin, Samuel B Kesner, Benjamin W Roop, Mateusz Wolak, Anusha Priya, Mark Ottensmeyer, Eugene Cheah, Brian A Telfer, Anthony E Samir",
+      "venue": "European Radiology, 1-11",
+      "date": "September 11, 2026",
       "year": "2026",
-      "url": null,
-      "todo": "TODO: Supply the paper URL and confirm the author asterisks before describing equal contribution."
+      "publishedAt": "2026-09-11",
+      "url": "https://link.springer.com/article/10.1007/s00330-026-12854-4",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=gNhR0hgAAAAJ&citation_for_view=gNhR0hgAAAAJ:35N4QoGY0k4C"
     },
     {
-      "title": "Validating the Use of Machine Learning Assisted Ultrasound Image-Guided Rapid Vascular Catheterization System by Intended Device Users",
-      "authors": "Prakash S, Waugh M, Priya A, Carruthers A, et al.",
+      "title": "Deep Learning-Based Tracking of Neurovascular Features Toward Semi-Automated Ultrasound-Guided Peripheral Nerve Blocks by Non-Specialists",
+      "authors": "Lars A Gjesteby, Alec Carruthers, Joshua Werblin, Nancy DeLosa, Carlos Bedolla, Mateusz Wolak, Benjamin W Roop, Elizabeth Slavkovsky, Sofia I Hernandez Torres, Krysta-Lynn Amezcua, Eric J Snider, Samuel B Kesner, Brian A Telfer, Brian J Kirkwood, Laura J Brattain",
+      "venue": "Bioengineering 13 (5), 556",
+      "date": "May 15, 2026",
+      "year": "2026",
+      "publishedAt": "2026-05-15",
+      "url": "https://www.mdpi.com/2306-5354/13/5/556",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=gNhR0hgAAAAJ&citation_for_view=gNhR0hgAAAAJ:RYcK_YlVTxYC"
+    },
+    {
+      "title": "1061 Toward Behavioral Health Risk Monitoring via Wearable Physiological Sensing During Sleep",
+      "authors": "Sophia Yuditskaya, Jing Wang, Alec Carruthers, Rachel Markwald, Alice LaGoy, Jason Jameson, Andrew Kubala, Molly Crane, Jacqueline Scott",
+      "venue": "SLEEPJ 49 (Supplement_1), A473-A473",
+      "date": "May 2026",
+      "year": "2026",
+      "publishedAt": "2026-05",
+      "url": "https://academic.oup.com/sleep/article-abstract/49/Supplement_1/A473/8674461",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=gNhR0hgAAAAJ&citation_for_view=gNhR0hgAAAAJ:lSLTfruPkqcC"
+    },
+    {
+      "title": "The assessment, improvement, and application of the GeoFlood flood inundation mapping framework",
+      "authors": "Alec Carruthers",
       "venue": null,
-      "date": "February 2026",
-      "year": "2026",
-      "url": null,
-      "todo": "TODO: Confirm venue and publication status; supply a paper URL. No venue or peer-review status is inferred."
-    },
-    {
-      "title": "Towards Single-operator Tracheotomy: AI-Assisted Robotic Device for Rapid and Safe Airway Management",
-      "authors": "Gjesteby L, Werblin J, Malka R, Carruthers A, et al.",
-      "venue": "The International Journal of Medical Robotics and Computer Assisted Surgery",
-      "date": "December 2025",
-      "year": "2025",
-      "url": null,
-      "todo": "TODO: Supply the paper URL."
+      "date": "January 25, 2021",
+      "year": "2021",
+      "publishedAt": "2021-01-25",
+      "url": "https://repositories.lib.utexas.edu/items/cd361f88-0a86-40c5-bd12-2e98daaeb0c5",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=gNhR0hgAAAAJ&citation_for_view=gNhR0hgAAAAJ:vV6vV6tmYwMC"
     }
   ]
 }
