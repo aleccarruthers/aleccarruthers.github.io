@@ -2,12 +2,13 @@
   "name": "Alec Carruthers",
   "description": "Alec Carruthers is an MIT EECS PhD student studying data-efficient learning and foundation models for biological science.",
   "role": "PhD student · MIT EECS",
-  "focus": "Data-efficient learning · AI for science",
+  "focus": "Data-efficient learning · AI for science · Continual learning",
   "photoAlt": "Alec Carruthers seated outdoors beneath trees",
   "bio": [
-    "I’m a first-year PhD student in Electrical Engineering and Computer Science at MIT. I’m interested in how data shapes what models learn: how dataset curation affects generalization, how to learn efficiently from limited data, and how to keep learning as data changes.",
-    "Previously, I was an AI Research Engineer at MIT Lincoln Laboratory, working on biomedical foundation models, multimodal learning, and ultrasound diffusion models. Before that, I worked on hyperspectral imaging and self-supervised learning at Apeel Sciences.",
-    "My research interests also include diffusion and flow models for molecular design and discovery, and foundation models for biological science."
+    "I’m a first-year PhD student in Electrical Engineering and Computer Science at MIT studying continual learning, generative modeling (diffusion, flow matching, flow maps), and data curation methods.",
+    "Many moons ago, I was an AI Research Engineer at MIT Lincoln Laboratory, working on biomedical foundation models, meta-learning, and diffusion models for various medical image modalities.",
+    "Eons ago, I was a data scientist at Apeel Sciences researching hyperspectral imaging and self-supervised learning for applications in materials science.",
+    "I aspire to have my work make tangible impact and some of the application areas I find most beneficial for society include: generative modeling for molecular design (proteins, enzymes, small molecules, etc.), multimodal continual learning across healthcare data for an individual to inform decision making, and accurately representing the impacts of a pertubation on a cell (in silico --> computationally)"
   ],
   "links": [
     { "label": "GitHub", "url": "https://github.com/aleccarruthers" },
