@@ -1,0 +1,28 @@
+<div class="theme-slot">
+  <button id="theme-toggle" type="button" hidden>Auto</button>
+</div>
+<script is:inline>
+  (() => {
+    const button = document.getElementById('theme-toggle');
+    const choices = ['auto', 'light', 'dark'];
+    let choice = document.documentElement.dataset.theme || 'auto';
+    const update = () => {
+      button.textContent = choice.charAt(0).toUpperCase() + choice.slice(1);
+      const next = choices[(choices.indexOf(choice) + 1) % choices.length];
+      button.setAttribute('aria-label', `Color theme: ${choice === 'auto' ? 'system default' : choice}. Switch to ${next === 'auto' ? 'system default' : next}.`);
+      button.title = button.getAttribute('aria-label');
+    };
+    button.addEventListener('click', () => {
+      choice = choices[(choices.indexOf(choice) + 1) % choices.length];
+      if (choice === 'auto') delete document.documentElement.dataset.theme;
+      else document.documentElement.dataset.theme = choice;
+      try {
+        if (choice === 'auto') localStorage.removeItem('theme');
+        else localStorage.setItem('theme', choice);
+      } catch {}
+      update();
+    });
+    update();
+    button.hidden = false;
+  })();
+</script>

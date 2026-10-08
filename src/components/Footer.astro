@@ -1,0 +1,10 @@
+---
+import profile from '../content/profile.json';
+---
+<footer class="site-footer">
+  <span>© {new Date().getFullYear()} {profile.name}</span>
+  <nav aria-label="Footer links">
+    {profile.links.map(link => <a href={link.url}>{link.label}</a>)}
+    <a href="/rss.xml">RSS</a>
+  </nav>
+</footer>

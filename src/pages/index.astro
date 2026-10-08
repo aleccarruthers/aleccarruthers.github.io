@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PublicationEntry from '../components/PublicationEntry.astro';
+import profile from '../content/profile.json';
+import publications from '../content/publications.json';
+import { getCollection } from 'astro:content';
+import ProjectEntry from '../components/ProjectEntry.astro';
+const projects = (await getCollection('projects', ({ data }) => data.featured)).sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout title={profile.name}>
+  <div class="profile-heading">
+    <div>
+      <p class="eyebrow">{profile.role}</p>
+      <h1>{profile.name}</h1>
+      <nav class="profile-links" aria-label="Profile links">
+        {profile.links.map(link => <a href={link.url}>{link.label}<span aria-hidden="true"> ↗</span></a>)}
+      </nav>
+    </div>
+    <img class="portrait" src="/images/profile.jpg" alt={profile.photoAlt} width="480" height="480" fetchpriority="high" />
+  </div>
+  <div class="prose bio">{profile.bio.map(paragraph => <p>{paragraph}</p>)}</div>
+  <dl class="at-a-glance">
+    <div><dt>Currently</dt><dd>{profile.role}</dd></div>
+    <div><dt>Focus</dt><dd>{profile.focus}</dd></div>
+  </dl>
+  <nav class="section-nav" aria-label="On this page">
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#background">Background</a>
+    <a href="#tools">Tools & methods</a>
+  </nav>
+  <section class="section" id="research" aria-labelledby="research-title">
+    <div class="section-heading"><h2 id="research-title">Selected research</h2><a href="/projects/">All projects <span aria-hidden="true">→</span></a></div>
+    <ul class="entry-list">{projects.map(project => <ProjectEntry project={project} compact />)}</ul>
+  </section>
+  <section class="section" id="publications" aria-labelledby="publications-title">
+    <div class="section-heading"><h2 id="publications-title">Publications</h2></div>
+    <ul class="entry-list">{publications.items.map(publication => <PublicationEntry publication={publication} />)}</ul>
+    <p class="award meta">{profile.award}</p>
+  </section>
+  <section class="section" id="background" aria-labelledby="background-title">
+    <div class="section-heading"><h2 id="background-title">Background</h2></div>
+    <h3 class="background-label">Research & industry</h3>
+    <ul class="entry-list timeline">
+      {profile.experience.map(job => <li><span class="meta">{job.dates}</span><div><p>{job.organization}</p><p class="meta">{job.role}</p></div></li>)}
+    </ul>
+    <h3 class="background-label">Education</h3>
+    <ul class="entry-list timeline">
+      {profile.education.map(item => <li><span class="meta">{item.date}</span><div><p>{item.school}</p><p class="meta">{item.degree}</p><p class="meta">{item.note}</p></div></li>)}
+    </ul>
+    <p class="teaching meta">{profile.teaching}</p>
+  </section>
+  <section class="section" id="tools" aria-labelledby="tools-title">
+    <div class="section-heading"><h2 id="tools-title">Tools & methods</h2></div>
+    <dl class="skills">{profile.skills.map(group => <div><dt>{group.category}</dt><dd>{group.items.join(' · ')}</dd></div>)}</dl>
+  </section>
+</BaseLayout>

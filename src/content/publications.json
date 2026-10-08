@@ -1,0 +1,32 @@
+{
+  "source": "content/resume.pdf; owner confirmed award announcement in August 2026",
+  "items": [
+    {
+      "title": "Semi-Automated, AI-Enabled Ultrasound Workflow for Central Vascular Access in Humans",
+      "authors": "Gjesteby L, Carruthers A, DeLosa N, et al.",
+      "venue": "IEEE Engineering in Medicine and Biology Society",
+      "date": "February 2026",
+      "year": "2026",
+      "url": null,
+      "todo": "TODO: Supply the paper URL and confirm the author asterisks before describing equal contribution."
+    },
+    {
+      "title": "Validating the Use of Machine Learning Assisted Ultrasound Image-Guided Rapid Vascular Catheterization System by Intended Device Users",
+      "authors": "Prakash S, Waugh M, Priya A, Carruthers A, et al.",
+      "venue": null,
+      "date": "February 2026",
+      "year": "2026",
+      "url": null,
+      "todo": "TODO: Confirm venue and publication status; supply a paper URL. No venue or peer-review status is inferred."
+    },
+    {
+      "title": "Towards Single-operator Tracheotomy: AI-Assisted Robotic Device for Rapid and Safe Airway Management",
+      "authors": "Gjesteby L, Werblin J, Malka R, Carruthers A, et al.",
+      "venue": "The International Journal of Medical Robotics and Computer Assisted Surgery",
+      "date": "December 2025",
+      "year": "2025",
+      "url": null,
+      "todo": "TODO: Supply the paper URL."
+    }
+  ]
+}
